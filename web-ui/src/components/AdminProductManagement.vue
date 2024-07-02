@@ -25,6 +25,10 @@
         <textarea v-model="product.description"></textarea>
       </div>
       <div class="input-field">
+        <label for="categoryIds">CategoryIds:</label>
+        <input type="number" v-model="product.categoryIds" required />
+      </div>
+      <div class="input-field">
         <label for="newCategoryNames">New Category Names:</label>
         <input type="text" v-model="product.newCategoryNames" />
       </div>
@@ -121,6 +125,7 @@ export default {
         price: '',
         stockQuantity: '',
         description: '',
+        categoryIds: '',
         newCategoryNames: ''
       },
       updateData: {
@@ -150,6 +155,7 @@ export default {
       formData.append('price', this.product.price)
       formData.append('stockQuantity', this.product.stockQuantity)
       formData.append('description', this.product.description)
+      formData.append('categoryIds', this.product.categoryIds)
       formData.append('newCategoryNames', this.product.newCategoryNames)
 
       for (let i = 0; i < this.files.length; i++) {
