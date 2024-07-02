@@ -15,12 +15,16 @@ import AdminUserManagement from '@/components/AdminUserManagement.vue'
 import UserAccount from '@/components/UserAccount.vue';
 import AdminTransactionManagement from '@/components/AdminTransactionManagement.vue';
 import CategoryProducts from '@/components/CategoryProducts.vue';
+import AdminOrderManagement from '@/components/AdminOrderManagement.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: HomePage,
+    meta: {
+      title: 'Home'
+    }
   },
   {
     path: '/search/:searchQuery?',
@@ -100,7 +104,12 @@ const routes = [
     path: '/products',
     name: 'CategoryProducts',
     component: CategoryProducts
-  }
+  },
+  {
+    path: '/adminordermanagement',
+    name: 'AdminOrderManagement',
+    component: AdminOrderManagement
+  },
 ];
 
 const router = createRouter({
