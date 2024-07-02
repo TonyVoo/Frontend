@@ -6,6 +6,7 @@
       <router-link to="/adminproductmanagement" class="btn">Manage Products</router-link>
       <router-link to="/adminusermanagement" class="btn">Manage Users</router-link>
       <router-link to="/admintransactionmanagement" class="btn">Manage Transactions</router-link>
+      <router-link to="/adminordermanagement" class="btn">Manage Orders</router-link> <!-- New Button -->
     </div>
   </div>
 </template>
